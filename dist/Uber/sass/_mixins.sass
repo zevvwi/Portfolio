@@ -1,0 +1,33 @@
+@mixin underheader_text
+  display: flex
+  margin: 18px auto 0
+  align-items: center
+  justify-content: center
+  width: 115px
+  height: 27px
+  background: #000000
+  font-weight: 400
+  font-size: 11px
+  text-transform: uppercase
+  color: #FFFFFF
+  text-align: center
+
+@mixin title
+  font-weight: 700
+  font-size: 38px
+  text-align: center
+  text-transform: uppercase
+  color: #222222
+  margin-top: 32px
+
+@mixin subtitle 
+  font-weight: 400
+  font-size: 17px
+  text-align: center
+  color: #222222
+  margin-top: 19px
+
+@mixin btn_hover
+  &:hover
+    background-image: none
+    background-color: $light-blue 

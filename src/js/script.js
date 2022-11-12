@@ -5,8 +5,15 @@ let hamburger = document.querySelector('.hamburger'),
 
 hamburger.addEventListener("click", () => {
     menu.classList.toggle('active');
-})
+});
 
 close.addEventListener("click", () => {
     menu.classList.toggle('active');
-})
+});
+
+const counter = document.querySelectorAll('.checkpoint__percentage');
+      line = document.querySelectorAll('.checkpoint__line-main .checkpoint__line-second');
+
+counter.forEach( (item, i) => {
+    line[i].style.width = item.innerHTML;
+});

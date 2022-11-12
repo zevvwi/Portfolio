@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body {
+    font-family: Nunito;
+    margin: 0;
+}
+.container {
+    max-width: 1215px;
+    margin: 0 auto;
+}
+.header {
+    padding-top: 130px;
+    background: #11161E;
+}
+.header__list ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin-bottom: 0;
+    padding-inline-start: 0;
+}
+.header__list ul li {
+    font-weight: 500;
+    font-size: 18px;
+}
+.header__list ul li a{
+    color: rgba(118, 134, 159, 0.8);
+    text-decoration: none;
+}
+.main-screen {
+    background: #11161E;
+    padding-top: 120px;
+    min-height: 812px;
+}
+.main-screen__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.main-screen__img img {
+    width: 360px;
+    height: 328px;
+}
+.main-screen__about {
+    width: 578px;
+}
+.main-screen__header {
+    font-weight: 700;
+    font-size: 52px;
+    color: #FFFFFF;
+}
+.main-screen__official {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    color: #6A7C95;
+}
+.about {
+    min-height: 851px;
+    background: #181F29;
+    padding-top: 208px;
+}
+.about__header {
+    font-weight: 700;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+.about__cards-wrapper {
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-between;
+}
+.about__card {
+    width: 317px;
+    height: 340px;
+    background: #273140;
+    border-radius: 15px;
+}
+.about__card img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90px;
+    height: 90px;
+}
+.about__card-header {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.about__card-descr {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #717E92;
+    width: 246px;
+    margin: 0 auto;
+}
+.tariff {
+    padding-top: 143px;
+    background: #11161E;
+    min-height: 892px;
+}
+.tariff__header {
+    font-weight: 700;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+.tariff__descr {
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A7C95;
+    width: 514px;
+}
+
+.tariff__cards-wrapper {
+    margin-top: 118px;
+    display: flex;
+    justify-content: space-between;
+}
+.tariff__card {
+    width: 317px;
+    height: 300px;
+    background: #273140;
+    border-radius: 15px;
+}
+.tariff__card-header {
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 53px;
+}
+.tariff__subheader {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #717E92;
+}
+.tariff__card ul {
+    margin-left: 21px;
+    min-height: 50px;
+}
+.tariff__card ul li {
+    font-weight: 400;
+    font-size: 16px;
+    color: #717E92;
+    width: 200px;
+}
+.tarrif__button {
+    display: block;
+    width: 248px;
+    height: 52px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.tarrif__button_link {
+    display: block;
+    width: 248px;
+    height: 52px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.tarrif__button_link:hover {
+    color: #FFFFFF;
+}
+.purple {
+    background: #6A7395;
+}
+.green {
+    background: #6A9590;
+}
+.yellow {
+    background: #95936A;
+}
+.want {
+    padding-top: 140px;
+    background: #181F29;
+    min-height: 532px;
+}
+.want__header {
+    font-weight: 700;
+    font-size: 42px;
+    color: #FFFFFF;
+}
+.want__subheader {
+    width: 565px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #6A7C95;
+}
+.want__subheader a {
+    color: #6A7C95;
+}
+.want__wrapper {
+    display: flex;
+}
+.want__about {
+    margin-right: 150px;
+}
+.form__wrapper {
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .main-screen__header {
+        font-size: 48px;
+    }
+    .main-screen__official {
+        font-size: 22px;
+    }
+    .about__cards-wrapper, .tariff__cards-wrapper {
+        justify-content: space-around;
+    }
+    .about__card, .tariff__card {
+        width: 305px;
+    }
+    .about__header, .tariff__header, .tariff__descr, .want__header, .want__subheader {
+        margin-left: 15px;
+    }
+    .want__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .want__about {
+        margin-right: 0;
+    }
+    .want__header, .want__subheader {
+        text-align: center;
+    }
+    .form__wrapper {
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    .main-screen__header, .main-screen__official {
+        margin-left: 20px;
+    }
+    .main-screen__header {
+        font-size: 44px;
+    }
+    .main-screen__official {
+        font-size: 21px;
+    }
+    .about__cards-wrapper {
+        flex-wrap: wrap;
+        margin-top: 45px;
+    }
+    .about__card:nth-child(3) {
+        margin: 45px 0;
+    }
+    .about {
+        padding-top: 70px;
+    }
+    .tariff__cards-wrapper {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+    .tariff__card:nth-child(3) {
+        margin: 45px 0;
+    }
+    .want {
+        padding-top: 70px;
+    }
+    .about__header, .tariff__header, .tariff__descr, .want__header, .want__subheader {
+        margin-left: 41px;
+    }
+    .main-screen__img {
+        display: none;
+    }
+    .main-screen {
+        min-height: 550px;
+    }
+    .tariff__descr, .want__subheader {
+        width: auto;
+    }
+}
+@media (max-width: 425px) {
+    .main-screen__header {
+        font-size: 40px;
+    }
+    .header, .main-screen {
+        padding-top: 70px;
+    }
+    .about__card:nth-child(3) {
+        margin: 35px 0 35px 0;
+    }
+    .about__card, .tariff__card {
+        margin: 35px 0 17.5px 0;
+    }
+    .about__cards-wrapper {
+        margin-top: 15px;
+    }
+    .tariff__cards-wrapper {
+        margin-top: 0;
+    }
+    .want__subheader, .want__header {
+        margin: 10px 15px;
+    }
+    .form__wrapper {
+        width: 90%;
+    }
+}
+@media (max-width: 375px) {
+    .main-screen__header {
+        font-size: 36px;
+    }
+}
+@media (max-width: 320px) {
+    .want__subheader {
+        font-size: 18px;
+    }
+    .tariff__card, .about__card {
+        width: 270px;
+    }
+    .tariff__card-header {
+        font-size: 26px;
+        margin-top: 30px;
+    }
+    .tariff {
+        padding-top: 70px;
+    }
+}
