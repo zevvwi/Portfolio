@@ -1,0 +1,39 @@
+.scores {
+    .scores__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(2, 70px);
+        gap: 45px;
+    }
+    .checkpoint {
+        width: 350px;
+        &__head {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 700;
+            padding-left: 13px;
+        }
+        &__header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            @include before_circle;
+            margin-bottom: 27px;
+        }
+        &__percentage {
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__line-main {
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &__line-second {
+            height: 14px;
+            background: $main-color;
+            border-radius: 4px;
+        }
+    }
+}
