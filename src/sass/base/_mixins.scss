@@ -11,3 +11,8 @@
         z-index: -1;
     }
 }
+@mixin divider {
+    width: 60px;
+    border: 2px solid #FFA501;
+    margin-top: 4px;
+}

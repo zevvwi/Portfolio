@@ -14,6 +14,9 @@
     width: 1140px;
     margin: 0 auto;
 }
+ul {
+    padding: 0;
+}
 
 @import 'blocks/promo';
 @import 'blocks/title';
@@ -21,3 +24,4 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';

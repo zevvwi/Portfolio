@@ -4,6 +4,9 @@
     &__img {
         height: 600px;
     }
+    &__subtitle {
+        line-height: 35px;
+    }
     &__wrapper {
         display: flex;
     }
@@ -20,7 +23,17 @@
         position: relative;
         padding-left: 12px;
         z-index: 2;
-        @include before_circle;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: $main-color;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
     }
     .title_fz36 {
         margin-top: 6px;
