@@ -1,5 +1,5 @@
 .hamburger {
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 30px;
     height: 21px;
@@ -40,7 +40,6 @@
     }
     &__block {
         position: relative;
-        // left: -100%;
         width: 345px;
         background: $main-color;
         height: 100%;
