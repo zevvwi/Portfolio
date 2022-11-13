@@ -1,0 +1,39 @@
+.price {
+    position: relative;
+    h2 {
+        margin-bottom: 31px;
+    }
+    &__divider {
+        @include divider;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .pricelist__wrapper {
+        margin-top: 91px;
+        display: grid;
+        grid-template-columns: repeat(2, 370px);
+        justify-content: space-between;
+    }
+    .pricelist__column {
+        display: grid;
+        grid-template-rows: repeat(3, 44px);
+        row-gap: 15px;
+    }
+    &__header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 25px;
+        @include before_circle;
+        &:before {
+            width: 15px;
+            height: 15px;
+            left: 0;
+            top: 4px;
+        }
+    }
+    &__descr {
+        padding-left: 25px;
+    }
+}
