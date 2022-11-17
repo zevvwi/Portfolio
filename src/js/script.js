@@ -1,11 +1,18 @@
 $(document).ready(function(){
     let hamburger = document.querySelector('.hamburger'),
-        close = document.querySelector('.menu__close'),
-        menu = document.querySelector('.menu');
-        window = document.querySelector('.menu__overlay');
+        close =     document.querySelector('.menu__close'),
+        menu =      document.querySelector('.menu');
+        window =    document.querySelector('.menu__overlay');
         linkClose = document.querySelectorAll('.menu__link')
-        counter = document.querySelectorAll('.checkpoint__percentage');
-        line = document.querySelectorAll('.checkpoint__line-main .checkpoint__line-second');
+        counter =   document.querySelectorAll('.checkpoint__percentage');
+        line =      document.querySelectorAll('.checkpoint__line-main .checkpoint__line-second');
+        thanks =    document.querySelector('.contacts__thx');
+        userForm =  document.querySelector('.contacts__form');
+        userName =  document.getElementById('name');
+        userEmail = document.getElementById('email'); 
+        userText =  document.getElementById('text');
+        userPolicy =document.getElementById('privacy');
+        buttonSend =document.querySelector('.contacts__btn');
 
     hamburger.addEventListener("click", () => {
         menu.classList.toggle('active');
@@ -60,21 +67,26 @@ $(document).ready(function(){
             }
           }
         });
-      }
-      $("#name").blur(); 
+      };
   
       validateForm('#contacts__form');
-  
+
       $('form').submit(function(e) {
+        checkValid = $('form').valid();
         e.preventDefault();
-        $.ajax({
-          type: "POST",
-          url: "../mailer/smart.php",
-          data: $(this).serialize()
-        }).done(function() {
-          $(this).find("input").val("");
-          $('form').trigger('reset');
-        });
-        return false;
-      });
+        if (checkValid) {
+          $.ajax({
+            type: "POST",
+            url: "../mailer/mail.php",
+            data: $(this).serialize()
+          }).done(function() {
+            userForm.classList.add('succses');
+            thanks.classList.add('active');
+          });
+          return false;
+        } else {
+          return false;
+        }
+      })
+
 })

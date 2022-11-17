@@ -455,7 +455,7 @@
                     </div>
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
 
-                    <form action="#" class="contacts__form" id="contacts__form" autocomplete="off">
+                    <form class="contacts__form" id="contacts__form" autocomplete="off">
                         <div class="contacts__input">
                             <input name="name" id="name" type="text" autocomplete="off">
                             <span for="name">Ваше имя</span>
@@ -469,19 +469,25 @@
                             <span for="text">Ваше сообщение</span>
                         </div>
                         <div class="contacts__triggers">
-                            <button type="submit" class="btn contacts__btn">Отправить сообщение</button>
+                            <input type="submit" class="btn contacts__btn" value="Отправить сообщение">
                             <div class="contacts__policy">
-                                <input type="checkbox" name="privacy">
+                                <input type="checkbox" name="privacy" id="privacy">
                                 <div>Я согласен(а) с <a href="/policy.html">политикой конфиденциальности</a></div>
                             </div>
                         </div>
                     </form>
+                    <div class="contacts__thx">
+                        <div class="contacts__thx_divider"></div>
+                        <h2 class="contacts__thx_header title title_fz36">Ваша заявка принята</h2>
+                        <div class="contacts__thx_descr title title_fz16">Мы свяжемся с вами в ближайшее время!</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

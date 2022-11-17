@@ -1,10 +1,5 @@
 .policy {
     padding: 80px 0 ;
-    &__subtitle {
-        span {
-
-        }
-    }
     &__header {
         position: relative;
         @include before_circle;
@@ -25,7 +20,7 @@
     }
 }
 .back {
-    position: relative;
+    position: fixed;
     width: 70px;
     height: 70px;
     display: flex;
