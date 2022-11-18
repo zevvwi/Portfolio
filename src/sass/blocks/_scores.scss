@@ -1,5 +1,5 @@
 .scores {
-    .scores__wrapper {
+    &__wrapper {
         display: grid;
         grid-template-columns: repeat(3, 350px);
         grid-template-rows: repeat(2, 70px);

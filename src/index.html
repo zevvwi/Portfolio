@@ -363,7 +363,11 @@
                 </a>
 
                 <a href="/AdFormer" class="portfolio__item horizontal">
-                    <img src="img/works/AdFormer.jpg" alt="mac">
+                    <!-- <img src="img/works/AdFormer.png" alt="mac"> -->
+                    <picture>
+                        <source media="(max-width: 1200px)" srcset="img/works/AdFormer.png">
+                        <img src="img/works/AdFormer.jpg" alt="">
+                    </picture>
                 </a>
             </div>
         </div>
@@ -456,11 +460,11 @@
                     <div class="title title_fz14 contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
 
                     <form class="contacts__form" id="contacts__form" autocomplete="off">
-                        <div class="contacts__input">
+                        <div class="contacts__input input_name">
                             <input name="name" id="name" type="text" autocomplete="off">
                             <span for="name">Ваше имя</span>
                         </div>
-                        <div class="contacts__input">
+                        <div class="contacts__input input_email">
                             <input name="email" id="email" type="email" inputmode="email" autocomplete="off">
                             <span for="email">Ваша почта</span>
                         </div>

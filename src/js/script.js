@@ -72,7 +72,7 @@ $(document).ready(function(){
       validateForm('#contacts__form');
 
       $('form').submit(function(e) {
-        checkValid = $('form').valid();
+        let checkValid = $('form').valid();
         e.preventDefault();
         if (checkValid) {
           $.ajax({
